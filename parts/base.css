@@ -1,0 +1,65 @@
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  color: white;
+  margin: 25px auto;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  margin: 25px auto;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  margin: 25px auto;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  margin: 25px auto;
+}
+
+.wp-block-button .wp-block-button__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #2F80ED;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wp-block-button .wp-block-button__link:hover {
+  background: #5e9df1;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background-color: white;
+  color: #0F2342;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background: #DAE7FF;
+}
+/*# sourceMappingURL=base.css.map */

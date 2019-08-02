@@ -1,0 +1,203 @@
+/*
+Theme Name: Understrap Child
+Description: RPM - Selus Project
+Author: Nick Gertonson
+Author URL: http://www.nickgertonson.com
+Template: understrap
+Version: 1.0.0
+Text Domain: understrap-child
+*/
+
+
+@import 'parts/base';
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #0F2342 0%, #2B5195 78.52%);
+    margin: 0px;
+}
+
+#masthead{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    .menu-toggle{
+        background-color: transparent;
+        background-image: url("img/md-menu.png");
+        background-size: contain;
+        height: 30px;
+        width: 30px;
+        border: none;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);        
+        &:hover{
+            opacity: .5;
+            transform: scale(.9);
+        }
+    }
+}
+
+// Qubely Wrappers
+.wp-block-qubely-wrapper{
+    .qubely-block-wrapper-block{
+        box-shadow: none !important;
+        border: none !important;
+        background-color: transparent !important;
+    }
+}
+
+// Intro Block
+#intro-block{
+    margin: 50px auto 100px auto;
+}
+
+// Product Block
+.product-block{
+    background-image: url('img/display-background.png');
+    background-size: cover;
+    >.qubely-block-wrapper-block{
+        padding: 50px 30px !important;
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        figure{
+            img{
+                display: block;
+            }
+            transform: scale(.9);
+            -webkit-box-shadow: 0px 10px 34px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 10px 34px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 10px 34px 0px rgba(0,0,0,0.5);
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover{
+                transform: scale(.85);
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+        figure:nth-of-type(2){
+            transform: scale(1.1);
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// Headphone Block
+.headphone-block{
+    margin: 150px auto;
+    >.qubely-block-wrapper-block{
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        @media all and (max-width: 850px){
+            grid-template-columns: 1fr;
+            figure{
+                img{
+                    max-width: 500px;
+                }
+            }
+        }
+        figure{
+            img{
+                display: block;
+                height: auto;
+            }
+        }
+    }
+}
+
+// Bottom Device Grid
+.bottom-device-grid{
+    margin: 150px auto;
+    >.qubely-block-wrapper-block{
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        @media all and (max-width: 850px){
+            display: block;
+            max-width: 450px;
+            margin: auto;
+        }
+        .volume,
+        .albums,
+        .headphone,
+        .equalizer{
+            .qubely-block-wrapper-block{
+                opacity: 1;
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);        
+                &:hover{
+                    opacity: .6;
+                }
+                figure{
+                    img{
+                        display: block;
+                        margin: auto;
+                        max-width: 40px;
+                    }
+                }
+                h4{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    
+        h3{
+            grid-area: 1/1/2/4;
+        }
+
+        .volume{
+            grid-area: 2/1/3/2;
+        }
+        .equalizer{
+            grid-area: 3/1/4/2;
+        }
+        .headphone{
+            grid-area: 2/3/3/4;
+        }
+        .albums{
+            grid-area: 3/3/4/4;
+
+        }
+        .phone{
+            grid-area: 2/2/4/3;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);        
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        .wp-block-button{
+            padding: 25px 0px;
+            grid-area: 5/2/6/3;
+        }
+
+    }
+}
+
+footer.site-footer{
+    background-color: $blue-dark;
+    padding: 50px;
+    .credit{
+        width: 100%;
+        margin: 30px auto;
+        text-align: center;
+        a{
+            color: white;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

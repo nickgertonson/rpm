@@ -1,0 +1,71 @@
+// Colors
+$blue-dark: #0F2342;
+$blue-medium: #2B5295;
+$blue-bright: #2F80ED;
+$blue-light: #DAE7FF;
+$red: #FF3334;
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: white;
+    margin: 25px auto;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    margin: 25px auto;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin: 25px auto;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    margin: 25px auto;
+}
+
+//Buttons
+
+.wp-block-button{
+    .wp-block-button__link{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        background: $blue-bright;
+        border-radius: 50px;
+        color: white;
+        border: none;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover{
+            background: lighten($blue-bright, 10%);
+            transform: translateY(3px);
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+    &.is-style-outline{
+        .wp-block-button__link{
+            background-color: white;
+            color: $blue-dark;
+            &:hover{
+                background: $blue-light;
+            }
+        }
+    }
+}
